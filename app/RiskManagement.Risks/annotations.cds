@@ -33,13 +33,18 @@ annotate service.Risks with @(
                 Value : miti.description,
                 Label : '{i18n>Description1}',
             },
+            {
+                $Type : 'UI.DataField',
+                Value : miti.timeline,
+                Label : 'timeline',
+            },
         ],
     },
     UI.Facets : [
         {
             $Type : 'UI.ReferenceFacet',
             ID : 'GeneratedFacet1',
-            Label : 'General Information',
+            Label : '{i18n>GeneralInformation}',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
     ],
