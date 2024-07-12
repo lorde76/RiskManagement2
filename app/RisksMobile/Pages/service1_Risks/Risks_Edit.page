@@ -1,0 +1,66 @@
+{
+	"Caption": "Update Risks Detail",
+	"DesignTimeTarget": {
+		"Service": "/RisksMobile/Services/service1.service",
+		"EntitySet": "Risks",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/RisksMobile/Rules/service1/Risks/Risks_Cancel.js"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/RisksMobile/Rules/service1/Risks/Risks_UpdateEntity.js"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "title",
+							"_Name": "title",
+							"Value": "{title}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "prio",
+							"_Name": "prio",
+							"Value": "{prio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "impact",
+							"_Name": "impact",
+							"Value": "{impact}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "criticality",
+							"_Name": "criticality",
+							"Value": "{criticality}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Risks_Edit",
+	"PrefersLargeCaption": true
+}
